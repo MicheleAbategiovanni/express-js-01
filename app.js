@@ -20,7 +20,7 @@ app.set("views", "views");
 
 // Error 404 middleware not found
 app.use((req, res, next) => {
-  res.status(404).render("error", { pageTitle: "Error" });
+  res.status(404).render("error", { pageTitle: "Error", path: '' });
 });
 
 //app.listen(3000, () =>
